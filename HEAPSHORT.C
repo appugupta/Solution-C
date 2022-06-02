@@ -86,7 +86,7 @@ void printArray(int arr[], int n)
  
 int main()
 {
-  int arr[] = {12, 11, 13, 5, 6, 7};
+  int arr[] = {12, 11, 14, 5, 6, 7};
   int n = sizeof(arr) / sizeof(arr[0]);
   heapSort(arr, n);
   printf("Sorted array is given in the following way \n");
