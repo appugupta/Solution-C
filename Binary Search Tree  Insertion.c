@@ -21,8 +21,7 @@ void preOrder( struct node *root) {
   
 }
 
-/* you only have to complete the function given below.  
-node is defined as  
+/* 
 
 struct node {
     
