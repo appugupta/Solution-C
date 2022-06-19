@@ -7,7 +7,6 @@ int main() {
 	
     int n, last_num , sum = 0, temp;
     scanf("%d", &n);
-    //Complete the code to calculate the sum of the five digits on n.
     temp = n;
     
     while(temp > 0)
