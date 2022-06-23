@@ -7,7 +7,6 @@ typedef struct nodetype
   int info;
   struct nodetype* next;
 }node;
-//funtion prototype
 void Createmptylist(node **head);
 void Traverseinorder(node * head);
 void Insertatbegining(node **head, int item);
