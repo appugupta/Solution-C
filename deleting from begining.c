@@ -13,8 +13,6 @@ struct Node
 void deleteNode(struct Node *head, 
                 struct Node *n)
 {
-    // When node to be deleted is 
-    // head node
     if(head == n)
     {
         if(head->next == NULL)
@@ -36,16 +34,12 @@ void deleteNode(struct Node *head,
     }
   
   
-    // When not first node, follow the 
   
-    // Find the previous node
     struct Node *prev = head;
     while(prev->next != NULL && 
           prev->next != n)
         prev = prev->next;
-  
-    // Check if node really exists in 
-    // Linked List
+
     if(prev->next == NULL)
     {
         printf(
@@ -53,10 +47,8 @@ void deleteNode(struct Node *head,
         return;
     }
   
-    // Remove node from Linked List
     prev->next = prev->next->next;
   
-    // Free memory
     free(n);
   
     return; 
