@@ -3,8 +3,7 @@
 #include<conio.h>
 
   
-// Structure of a linked list 
-// node
+
 struct Node
 {
     int data;
@@ -25,7 +24,6 @@ void deleteNode(struct Node *head,
             return;
         }
   
-        // Copy the data of next node to head
         head->data = head->next->data;
   
         // store address of next node
