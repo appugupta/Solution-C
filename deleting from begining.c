@@ -26,13 +26,10 @@ void deleteNode(struct Node *head,
   
         head->data = head->next->data;
   
-        // store address of next node
         n = head->next;
   
-        // Remove the link of next node
         head->next = head->next->next;
   
-        // free memory
         free(n);
   
         return;
@@ -40,7 +37,6 @@ void deleteNode(struct Node *head,
   
   
     // When not first node, follow the 
-    // normal deletion process
   
     // Find the previous node
     struct Node *prev = head;
