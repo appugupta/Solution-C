@@ -27,7 +27,7 @@ void printArray(int array[], int size)
 
    int main()
    {
-     int data[] = {-2, 45, 0 ,11, -9};
+     int data[] = {-2, 45, 0 ,10, -9};
 
      int size = sizeof(data) / sizeof (data[0]);
 
