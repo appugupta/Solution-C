@@ -76,7 +76,7 @@ int infixToPostfix(char* exp)
  
    
     struct Stack* stack = createStack(strlen(exp));
-    if(!stack) // See if stack was created successfully
+    if(!stack) 
         return -1 ;
  
     for (i = 0, k = -1; exp[i]; ++i)
@@ -89,9 +89,7 @@ int infixToPostfix(char* exp)
         else if (exp[i] == '(')
             push(stack, exp[i]);
          
-        // If the scanned character is an ‘)’,
-        // pop and output from the stack
-        // until an ‘(‘ is encountered.
+   
         else if (exp[i] == ')')
         {
             while (!isEmpty(stack) && peek(stack) != '(')
