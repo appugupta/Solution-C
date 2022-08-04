@@ -82,13 +82,10 @@ int infixToPostfix(char* exp)
     for (i = 0, k = -1; exp[i]; ++i)
     {
          
-        // If the scanned character is
-        // an operand, add it to output.
         if (isOperand(exp[i]))
             exp[++k] = exp[i];
          
-        // If the scanned character is an
-        // ‘(‘, push it to the stack.
+  
         else if (exp[i] == '(')
             push(stack, exp[i]);
          
