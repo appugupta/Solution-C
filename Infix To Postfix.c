@@ -2,7 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
  
-// Stack type
 struct Stack
 {
     int top;
@@ -10,7 +9,6 @@ struct Stack
     int* array;
 };
  
-// Stack Operations
 struct Stack* createStack( unsigned capacity )
 {
     struct Stack* stack = (struct Stack*)
