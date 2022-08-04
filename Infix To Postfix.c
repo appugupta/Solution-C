@@ -95,11 +95,11 @@ int infixToPostfix(char* exp)
             while (!isEmpty(stack) && peek(stack) != '(')
                 exp[++k] = pop(stack);
             if (!isEmpty(stack) && peek(stack) != '(')
-                return -1; // invalid expression            
+                return -1;            
             else
                 pop(stack);
         }
-        else // an operator is encountered
+        else 
         {
             while (!isEmpty(stack) &&
                  Prec(exp[i]) <= Prec(peek(stack)))
@@ -109,7 +109,7 @@ int infixToPostfix(char* exp)
  
     }
  
-    // pop all the operators from the stack
+    
     while (!isEmpty(stack))
         exp[++k] = pop(stack );
  
@@ -117,7 +117,6 @@ int infixToPostfix(char* exp)
     printf( "%s", exp );
 }
  
-// Driver program to test above functions
 int main()
 {
     char exp[] = "a+b*(c^d-e)^(f+g*h)-i";
