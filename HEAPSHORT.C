@@ -1,6 +1,5 @@
 #include <stdio.h>
  
-// Function to swap the position of two elements
  
 void swap(int *a, int *b) {
  
@@ -12,14 +11,10 @@ void swap(int *a, int *b) {
  
 }
  
-// To heapify a subtree rooted with node i
-// which is an index in arr[].
-// n is size of heap
+
 void heapify(int arr[], int n, int i) {
  
-  // Find largest among root, left child and right child
- 
-    // Initialize largest as root
+ t
   int largest = i;
  
    // left = 2*i + 1
